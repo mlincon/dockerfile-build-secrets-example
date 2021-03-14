@@ -11,5 +11,5 @@ COPY export-secrets.sh .
 # mount secrets
 RUN --mount=type=secret,id=secretsfile ./export-secrets.sh
 
-# Sleep for 30 seconds
+# Sleep for 600 seconds
 CMD sleep 600
